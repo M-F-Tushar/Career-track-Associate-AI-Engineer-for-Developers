@@ -21,7 +21,7 @@
 
 ### 1.1 What is Text Classification?
 
-Text classification is the process of labeling input text with one or more predefined categories. It is one of the most widely applied natural language processing tasks and forms the foundation for many real-world AI systems including review analysis, spam detection, content moderation, and recommendation systems.
+Text classification is the process of labeling input text with one or more predefined categories. It is one of the most widely applied natural language processing tasks and forms the foundation for many real-world AI systems, including review analysis, spam detection, content moderation, and recommendation systems.
 
 The course covers four distinct types of text classification, each serving a different purpose but all using the `"text-classification"` task in a pipeline — the model chosen is what determines which type of classification is performed.
 
