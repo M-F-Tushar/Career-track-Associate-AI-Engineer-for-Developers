@@ -16,7 +16,7 @@ This career track teaches you to integrate AI into software applications using i
 - Apply **LLMOps** best practices for production-grade AI deployments
 - Integrate third-party APIs reliably with proper error handling and rate-limit management
 
-**Track length:** ~26 hours | **Items:** 12 (9 courses + 3 bonus projects) | **Credential:** Associate AI Engineer for Developers Certificate
+**Track length:** ~26 hours | **Items:** 12 (9 courses + 3 bonus projects) | **Credential:** Associate AI Engineer for Developers Certificate 
 
 ---
 
