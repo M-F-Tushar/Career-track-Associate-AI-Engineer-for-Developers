@@ -1,7 +1,7 @@
 # 🤖 Associate AI Engineer for Developers — DataCamp Career Track
 
 > **Personal notes and exercise repository** for the [Associate AI Engineer for Developers](https://www.datacamp.com/tracks/associate-ai-engineer-for-developers) career track on DataCamp.  
-> This repo is a living document — it grows as I progress through the entire track.               
+> This repo is a living document — it grows as I progress through the entire track.                
 
 ---
 
