@@ -9,7 +9,7 @@
 
 This career track teaches you to integrate AI into software applications using industry-standard tools and APIs. By the end, you'll be able to:
 
-- Build AI-powered backend systems and user-facing applications
+- Build AI-powered backend systems and user-facing applications 
 - Use **LLMs** to generate text and optimize outputs via prompt engineering
 - Create **chatbots**, **recommendation engines**, and **semantic search** systems
 - Work with **OpenAI API**, **Hugging Face**, **LangChain**, and **Pinecone**
