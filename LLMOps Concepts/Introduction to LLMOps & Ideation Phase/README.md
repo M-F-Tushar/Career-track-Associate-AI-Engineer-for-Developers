@@ -2,7 +2,7 @@
 
 ---
 
-## 1. What is LLMOps?  
+## 1. What is LLMOps?   
 
 **LLMOps** stands for **Large Language Model Operations**. It involves the specialized **practices, processes, and infrastructure** required to effectively:
 - **Manage** LLM applications
