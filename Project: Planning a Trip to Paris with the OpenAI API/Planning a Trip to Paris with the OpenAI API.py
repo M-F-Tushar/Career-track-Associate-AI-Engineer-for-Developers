@@ -1,4 +1,3 @@
-# Start your code here!
 import os
 from openai import OpenAI
 
