@@ -1,8 +1,8 @@
 # Comprehensive Study Guide: LLMOps Concepts — Segment 1: Introduction to LLMOps & Ideation Phase
 
 ---
- 
-## 1. What is LLMOps?                 
+
+## 1. What is LLMOps?
 
 **LLMOps** stands for **Large Language Model Operations**. It involves the specialized **practices, processes, and infrastructure** required to effectively:
 - **Manage** LLM applications
@@ -57,7 +57,7 @@ LLMOps serves three core purposes for organizations:
 
 1. **Seamless integration** — Ensures LLMs integrate smoothly into the organization, aligning with existing processes.
 2. **Smooth lifecycle transitions** — Enables a smooth shift across lifecycle phases, from ideation and development to deployment.
-3. **Efficient, scalable, and risk-controlled management** — Allows organizations to maximize benefits while minimizing risks.
+3. **Efficient, scalable management** — Allows organizations to maximize benefits while managing LLM applications at scale.
 
 > **Bottom line:** LLMOps is essential for effective LLM use at scale.
 
@@ -69,13 +69,13 @@ LLMOps serves three core purposes for organizations:
 
 | Dimension | LLMOps | MLOps |
 |---|---|---|
-| **Model scale** | Large-scale models | Typically smaller models |
-| **Data focus** | Primarily **text** data | Any type of data |
-| **Model origin** | Leverages **pre-trained** models | Typically trains from scratch |
-| **Performance techniques** | Prompt engineering, fine-tuning | Feature engineering, model selection |
-| **Model scope** | **General-purpose** — wide range of tasks and domains | **Fixed scope** — tailored to specific tasks |
-| **Predictability** | Less predictable; prone to **hallucinations** | Generally more predictable |
-| **Output type** | Primarily **text** | Task-specific (labels, probabilities, etc.) |
+| **Model size** | Large | Typically smaller |
+| **Data** | Text | Any data |
+| **Pre-trained models** | Typically yes | Typically no |
+| **Model improvement** | Prompt engineering & fine-tuning | Feature engineering & model selection |
+| **Generalization** | General-purpose | Fixed scope |
+| **Unpredictability** | High | Low |
+| **Output** | Primarily text | Task-specific |
 
 ---
 
@@ -85,7 +85,7 @@ The LLM application lifecycle has **three main phases**, and movement between th
 
 ```
 Ideation Phase  ⟷  Development Phase  ⟷  Operational Phase
-  (Planning)          (Building)           (Deploying & Maintaining)
+  (Chapter 1)        (Chapter 2)           (Chapter 3)
 ```
 
 ### 6.1 Why the Phases Are Non-Sequential
@@ -101,7 +101,18 @@ Ideation Phase  ⟷  Development Phase  ⟷  Operational Phase
 
 ---
 
-## 7. The Ideation Phase
+## 7. The Full Lifecycle at a Glance
+
+| Ideation Phase | Development Phase | Operational Phase |
+|---|---|---|
+| Data sourcing | Prompt engineering | Deployment |
+| Base model selection | Chains and agents | Monitoring and observability |
+| | RAG versus fine-tuning | Cost management |
+| | Testing | Governance and security |
+
+---
+
+## 8. The Ideation Phase
 
 The ideation phase is about **planning** — understanding the business problem and laying the groundwork for development. It consists of two main activities:
 
@@ -110,7 +121,7 @@ The ideation phase is about **planning** — understanding the business problem 
 
 ---
 
-### 7.1 Data Sourcing
+### 8.1 Data Sourcing
 
 Data is the **fuel** that powers the reasoning capabilities of the LLM. Data sourcing involves identifying needs, finding sources, and ensuring accessibility.
 
@@ -134,7 +145,7 @@ Three guiding questions must be answered:
 
 ---
 
-### 7.2 Base Model Selection
+### 8.2 Base Model Selection
 
 After identifying data sources, the next step is selecting the right LLM to build upon. Most organizations choose **pre-trained models** — models already trained on significant amounts of text data.
 
@@ -150,7 +161,7 @@ After identifying data sources, the next step is selecting the right LLM to buil
 | **Customization** | Limited | Fully customizable |
 | **Commercial use** | Generally allowed | Not always allowed (check license) |
 | **Transparency** | Low (closed-source) | High (code is public) |
-| **Where to access** | Via API (e.g., OpenAI, Anthropic) | Downloaded from online model hubs |
+| **Examples** | ChatGPT, Claude, PaLM 2, Gemini | Meta Llama 3 (downloadable from Hugging Face) |
 
 > **Critical question:** Is it acceptable to expose your data to a third-party? If **no** (e.g., medical records, government data, financial data), you must use open-source models with in-house hosting.
 
@@ -199,7 +210,7 @@ After the proprietary vs. open-source decision, evaluate candidate models across
 
 ---
 
-## 8. Exercise Walkthroughs & Answers
+## 9. Exercise Walkthroughs & Answers
 
 ### Exercise 1: LLMOps vs. MLOps (Categorization)
 
@@ -251,9 +262,11 @@ After the proprietary vs. open-source decision, evaluate candidate models across
 | Selecting the right LLM base model | **Ideation phase** |
 | Deciding which data sources to use | **Ideation phase** |
 | Prompt engineering | **Development phase** |
+| Testing that the application works as intended | **Development phase** |
 | Cost management | **Operational phase** |
-| Testing that the application works as intended | **Operational phase** |
 | Performance monitoring | **Operational phase** |
+
+> **Note:** Testing belongs to the **Development phase**, not the Operational phase. This is clearly shown in the course lifecycle diagram.
 
 ---
 
@@ -300,7 +313,7 @@ After the proprietary vs. open-source decision, evaluate candidate models across
 
 ---
 
-## 9. Key Concepts Summary
+## 10. Key Concepts Summary
 
 | Concept | Summary |
 |---|---|
@@ -308,8 +321,8 @@ After the proprietary vs. open-source decision, evaluate candidate models across
 | LLM applications | LLMs integrated with organizational data and processes to perform real-world tasks |
 | Hallucinations | When an LLM generates incorrect or fabricated information — a unique LLM risk |
 | Ideation phase | Planning phase: data sourcing + base model selection |
-| Development phase | Building phase: prompt engineering, architecture design, RAG, fine-tuning, testing |
-| Operational phase | Deployment and maintenance: monitoring, cost management, governance and security |
+| Development phase | Building phase: prompt engineering, chains and agents, RAG vs fine-tuning, testing |
+| Operational phase | Deployment and maintenance: monitoring & observability, cost management, governance and security |
 | Data sourcing | Identifying and making available the right data (relevant, available, quality) |
 | Proprietary models | Closed-source, third-party hosted; easy to use but data must leave the organization |
 | Open-source models | Publicly available, can be hosted in-house; requires AI engineering expertise |
@@ -317,30 +330,6 @@ After the proprietary vs. open-source decision, evaluate candidate models across
 | Fine-tunability | The ability to optionally adjust a pre-trained model for specific use-cases |
 | Primary model selection factors | Response quality, speed, license type, cost |
 | Secondary model selection factors | Number of parameters, model popularity |
-
----
-
-## 10. Full LLMOps Lifecycle at a Glance
-
-```
-┌─────────────────────────────────────────────────────────────────┐
-│                     LLMOps Lifecycle                            │
-├───────────────┬──────────────────────┬──────────────────────────┤
-│ IDEATION      │ DEVELOPMENT          │ OPERATIONAL              │
-│ (Planning)    │ (Building)           │ (Deploying & Maintaining)│
-├───────────────┼──────────────────────┼──────────────────────────┤
-│ Data sourcing │ Prompt engineering   │ Deployment               │
-│               │                      │                          │
-│ Base model    │ Application          │ Monitoring &             │
-│ selection     │ architecture         │ observability            │
-│               │ (chains, agents)     │                          │
-│               │                      │ Cost management          │
-│               │ RAG & fine-tuning    │                          │
-│               │                      │ Governance &             │
-│               │ Testing              │ security                 │
-└───────────────┴──────────────────────┴──────────────────────────┘
-         ⟵ Phases are flexible and can move in both directions ⟶
-```
 
 ---
 
