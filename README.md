@@ -47,7 +47,21 @@ Career-track-Associate-AI-Engineer-for-Developers/
 │   └── Planning a Trip to Paris with the OpenAI API.py
 │
 ├── Working with Hugging Face/
-│   └── Getting Started with Hugging Face/
+│   ├── Getting Started with Hugging Face/
+│   │   └── README.md
+│   └── Building Pipelines with Hugging Face/
+│       └── README.md
+│
+├── LLMOps Concepts/
+│   ├── Introduction to LLMOps & Ideation Phase/
+│   │   └── README.md
+│   ├── Development Phase/
+│   │   └── README.md
+│   └── Operational Phase/
+│       └── README.md
+│
+├── Developing AI Systems with the OpenAI API/
+│   └── Structuring End-to-End Applications/
 │       └── README.md
 │
 └── README.md   ← You are here
@@ -64,9 +78,9 @@ Career-track-Associate-AI-Engineer-for-Developers/
 | 1 | **Working with the OpenAI API** | Course | ✅ Complete | [`Working with the OpenAI API/`](./Working%20with%20the%20OpenAI%20API/) |
 | 2 | **Prompt Engineering with the OpenAI API** | Course | ✅ Complete | [`Prompt Engineering with the OpenAI API/`](./Prompt%20Engineering%20with%20the%20OpenAI%20API/) |
 | — | **Planning a Trip to Paris with the OpenAI API** | Bonus Project | ✅ Complete | [`Project: Planning a Trip to Paris with the OpenAI API/`](./Project%3A%20Planning%20a%20Trip%20to%20Paris%20with%20the%20OpenAI%20API/) |
-| 3 | **Working with Hugging Face** | Course | 🔄 In Progress | [`Working with Hugging Face/`](./Working%20with%20Hugging%20Face/) |
-| 4 | **LLMOps Concepts** | Course | 🔜 Upcoming | — |
-| 5 | **Developing AI Systems with the OpenAI API** | Course | 🔜 Upcoming | — |
+| 3 | **Working with Hugging Face** | Course | ✅ Complete | [`Working with Hugging Face/`](./Working%20with%20Hugging%20Face/) |
+| 4 | **LLMOps Concepts** | Course | ✅ Complete | [`LLMOps Concepts/`](./LLMOps%20Concepts/) |
+| 5 | **Developing AI Systems with the OpenAI API** | Course | 🔄 In Progress | [`Developing AI Systems with the OpenAI API/`](./Developing%20AI%20Systems%20with%20the%20OpenAI%20API/) |
 | — | **Organizing Medical Transcriptions with the OpenAI API** | Bonus Project | 🔜 Upcoming | — |
 | 6 | **Introduction to Embeddings with the OpenAI API** | Course | 🔜 Upcoming | — |
 | — | **Topic Analysis of Clothing Reviews with Embeddings** | Bonus Project | 🔜 Upcoming | — |
@@ -119,32 +133,43 @@ A hands-on project applying the OpenAI API to a real-world use case: building a 
 
 ---
 
-### 🔄 Course 3 — Working with Hugging Face
+### ✅ Course 3 — Working with Hugging Face
 
-Covers navigating and using the Hugging Face Hub, running models locally and via inference providers, and working with datasets programmatically.
+Covers navigating and using the Hugging Face Hub, running models locally and via inference providers, and working with datasets and NLP pipelines programmatically.
 
 | Segment | Topics Covered | Notes |
 |---------|---------------|-------|
 | [Segment 1 — Getting Started with Hugging Face](./Working%20with%20Hugging%20Face/Getting%20Started%20with%20Hugging%20Face/README.md) | Hugging Face Hub, model & dataset cards, `pipeline` class for local inference, `InferenceClient` for remote inference providers, `datasets` library (`load_dataset`, `.filter()`, `.select()`), Apache Arrow format | — |
-| Segment 2 — *Upcoming* | Natural language tasks with Hugging Face (summarization, classification, document Q&A) | — |
+| [Segment 2 — Building Pipelines with Hugging Face](./Working%20with%20Hugging%20Face/Building%20Pipelines%20with%20Hugging%20Face/README.md) | Text classification (sentiment, grammar, QNLI, zero-shot), extractive vs. abstractive summarization, Auto Models & Tokenizers, document question answering with `pypdf` | — |
 
-**Key skills gained so far:** Hub navigation, `transformers` pipeline, inference providers (Together.ai), dataset loading and filtering.
-
----
-
-### 🔜 Course 4 — LLMOps Concepts
-
-Covers the full lifecycle of LLM applications — from ideation to deployment — including monitoring, versioning, and production challenges.
-
-*Notes folder will be added upon completion.*
+**Key skills gained:** Hub navigation, `transformers` pipeline, inference providers (Together.ai), dataset loading and filtering, NLP classification and summarization pipelines, Auto classes for custom tokenization, document QA end-to-end.
 
 ---
 
-### 🔜 Course 5 — Developing AI Systems with the OpenAI API
+### ✅ Course 4 — LLMOps Concepts
 
-Focuses on building production-ready AI applications with the OpenAI API: structured outputs, function calling, error handling, rate limit management, and robustness patterns.
+Covers the full lifecycle of LLM applications — from ideation through development to production operations — including monitoring, cost management, and security.
 
-*Notes folder will be added upon completion.*
+| Segment | Topics Covered | Notes |
+|---------|---------------|-------|
+| [Segment 1 — Introduction to LLMOps & Ideation Phase](./LLMOps%20Concepts/Introduction%20to%20LLMOps%20%26%20Ideation%20Phase/README.md) | What LLMOps is, LLMOps vs. MLOps, the three lifecycle phases, data sourcing (relevance/availability/quality), base model selection (proprietary vs. open-source, primary vs. secondary factors) | — |
+| [Segment 2 — Development Phase](./LLMOps%20Concepts/Development%20Phase/README.md) | Prompt engineering & management, prompt templates, chains vs. agents, RAG vs. fine-tuning (supervised fine-tuning, RLHF), testing strategies (ML metrics, text comparison, feedback scores, unsupervised metrics) | — |
+| [Segment 3 — Operational Phase](./LLMOps%20Concepts/Operational%20Phase/README.md) | Deployment (hosting, API design, containers, CI/CD, scaling), monitoring & observability (logs/metrics/traces, input/functional/output monitoring, data drift, model drift), cost management (model selection, prompt compression, batching, caching), governance & security (RBAC, zero trust, prompt injection, output manipulation, DoS, data poisoning) | — |
+
+**Key skills gained:** Full LLMOps lifecycle understanding, RAG architecture, fine-tuning approaches, evaluation metric selection, production deployment patterns, security threat mitigation.
+
+---
+
+### 🔄 Course 5 — Developing AI Systems with the OpenAI API
+
+Focuses on building production-ready AI applications with the OpenAI API: structured outputs, error handling, rate limit management, batching, and robustness patterns.
+
+| Segment | Topics Covered | Notes |
+|---------|---------------|-------|
+| [Segment 1 — Structuring End-to-End Applications](./Developing%20AI%20Systems%20with%20the%20OpenAI%20API/Structuring%20End-to-End%20Applications/README.md) | API call structure, JSON output with `response_format`, error types (connection, resource limits, authentication, bad request), `try/except` handling, retry with exponential backoff (`tenacity`), batching, token counting with `tiktoken` | — |
+| Segment 2 — *Upcoming* | — | — |
+
+**Key skills gained so far:** Production error handling, rate limit strategies, exponential backoff with `tenacity`, message batching, token-gated API calls with `tiktoken`.
 
 ---
 
@@ -211,10 +236,10 @@ All exercises use Python. Core dependencies vary by course:
 
 ```bash
 # OpenAI API courses
-pip install openai
+pip install openai tiktoken tenacity
 
 # Hugging Face courses
-pip install transformers datasets huggingface_hub
+pip install transformers datasets huggingface_hub pypdf
 ```
 
 A placeholder API key `"<OPENAI_API_TOKEN>"` is used throughout the OpenAI sections — replace it with your own key from [platform.openai.com](https://platform.openai.com) if running code locally. For Hugging Face exercises, store your token as the `HF_TOKEN` environment variable.
